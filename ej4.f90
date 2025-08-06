@@ -10,11 +10,12 @@ real(wp), allocatable :: a(:,:),C(:),k(:),m(:),L(:)
 integer i,j,n
 character yn
 
+!compilador
+!gfortran -Wall -o Tpfinal ej4.f90 -I./modules -L./lib -llapack95 -llapack -lblas
+
 yn="Y"
 do while (yn=="Y") !condicion para luego ejecutar el programa de 
 !nuevo con distintos numeros de particula (n)
-
-!gfortran -Wall -o Tpfinal ej4.f90 -I./modules -L./lib -llapack95 -llapack -lblas
 
 open(10,file="matriz_A.dat")
 

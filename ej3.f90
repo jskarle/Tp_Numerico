@@ -9,6 +9,7 @@ implicit none
 real(wp), allocatable :: a(:,:),f(:),k(:),x(:),A1(:,:)
 integer i,j,n
 
+!compilador
 !gfortran -Wall -o Tpfinal ej3.f90 -I./modules -L./lib -llapack95 -llapack -lblas
 
 open(10,file="matriz_K.dat")
