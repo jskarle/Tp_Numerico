@@ -14,8 +14,7 @@ yn="Y"
 do while (yn=="Y") !condicion para luego ejecutar el programa de 
 !nuevo con distintos numeros de particula (n)
 
-!gfortran -Wall -o Tpfinal ej4.f90 -I../practica_3/lapack/modules 
-!-L../practica_3/lapack/lib -llapack95 -llapack -lblas
+!gfortran -Wall -o Tpfinal ej4.f90 -I./modules -L./lib -llapack95 -llapack -lblas
 
 open(10,file="matriz_A.dat")
 

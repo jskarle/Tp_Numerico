@@ -9,8 +9,7 @@ implicit none
 real(wp), allocatable :: a(:,:),f(:),k(:),x(:),A1(:,:)
 integer i,j,n
 
-!gfortran -Wall -o Tpfinal ej3.f90 -I../practica_3/lapack/modules 
-!-L../practica_3/lapack/lib -llapack95 -llapack -lblas
+!gfortran -Wall -o Tpfinal ej3.f90 -I./modules -L./lib -llapack95 -llapack -lblas
 
 open(10,file="matriz_K.dat")
 !matriz_K.dat es un archivo para escribir la matriz A y poder visualizarla mejor que en la terminal

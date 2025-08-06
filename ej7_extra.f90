@@ -7,8 +7,7 @@ implicit none
 real(wp), allocatable :: a(:,:),f(:)
 integer i
 
-!gfortran -Wall -o Tpfinal ej7_extra.f90 -I../practica_3/lapack/modules 
-!-L../practica_3/lapack/lib -llapack95 -llapack -lblas
+!gfortran -Wall -o Tpfinal ej7_extra.f90 -I./modules -L./lib -llapack95 -llapack -lblas
 
 allocate(f(23),a(23,3))
 
